@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
-    <nav class="clearfix">
+    <nav class="container">
       <a class="logo" title="Logo" href="img/logo.png"><img src="img/logo.png" alt="Logo"/></a>
       <ul class="navigation">
         <li><a title="Agenda" href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i>Agenda</a></li>
@@ -16,12 +16,16 @@
         <li><a title="Contact us" href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>Contact Us</a></li>
       </ul>
     </nav>
-    <header>
-      <h1></h1>
-      <h2></h2>
-    </header>
-    <main>
-      <h3></h3>
+    <div class="container">
+      <section class="present">
+        <header>
+          <h1>Move - Breath - Laugh</h1>
+          <h2>And access our bubble of serenity!</h2>
+        </header>
+      </section>
+    </div>
+    <main class="container">
+      <h3>Promotion</h3>
       <section class="intro">
         <p>Huic Arabia est conserta, ex alio latere Nabataeis contigua; opima varietate conmerciorum castrisque oppleta validis et castellis, quae ad repellendos genti</p>
         <p>Huic Arabia est conserta, ex alio latere Nabataeis contigua; opima varietate conmerciorum castrisque oppleta validis et castellis, quae ad repellendos genti</p>
@@ -37,24 +41,25 @@
         <article class="sessions">
           <h2>Sessions</h2>
           <a href="#"><img src="img/home/1.png" alt="Sessions"></a>
-          <p>est conserta, ex alio latere Nabataeis contigua; opima</p>
+          <p>est conserta, ex alio latere Nabataeis contigua; opima </p>
         </article>
         <article class="team">
           <h2>Our team</h2>
           <a href="#"><img src="img/home/2.png" alt="Our team"></a>
-          <p>ex alio latere Nabataeis contigua; opima varietate conmerciorum c</p>
+          <p>ex alio latere Nabataeis contigua; opima varietate conmerciorum cincididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
         </article>
         <article class="prices">
           <h2>Prices</h2>
           <a href="#"><img src="img/home/3.png" alt="Sessions"></a>
-          <p>quae adre Nabataeis contigua; opim</p>
+          <p>quae adre Nabataeis contigua; opim repellendos genti ex alio latere Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis .</p>
         </article>
       </section>
       <section class="maps">
         <div id="googleMap" style="width:100%;height:400px;"></div>
       </section>
     </main>
-    <footer>2018 3WA training: Yoga</footer>
+    <footer class="container">2018 3WA training: Yoga</footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
     <script>
     function myMap() {
       var mapProp= {
@@ -64,6 +69,5 @@
       var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
     }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
   </body>
 </html>
