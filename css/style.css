@@ -73,10 +73,9 @@ nav ul li i.fa {
 header {
   background-color: rgba(73, 195, 180, 0.75);
   padding: .5%;
-  font-family: 'Courgette';
 }
 
-h1, h2 {
+h1, h2, h3, .menu a{
   color: white;
   font-weight: normal;
 }
@@ -85,6 +84,90 @@ h1 {
   font-size: 3rem;
 }
 
-h2 {
+h1, h2, .menu a {
+  font-family: 'Courgette';
+}
+
+h2, .menu a {
   font-size: 2rem;
+}
+
+h3 {
+  background-color: rgb(73, 195, 180);
+  margin: 0 auto;
+  padding: 1.5%;
+  font-size: 2.5rem;
+}
+
+span {
+  text-transform: uppercase;
+}
+
+.intro {
+  text-align: left;
+  padding: 2% 1%;
+}
+
+.menu {
+  background-color: #B7B12E;
+  color: white;
+  padding: .5%;
+}
+
+article {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 1% 5%;
+}
+
+.sessions {
+  float: left;
+  width: 33.33%;
+}
+
+.team {
+  float: left;
+  width: 33.33%;
+}
+
+.prices {
+  float: left;
+  width: 33.33%;
+}
+
+article img {
+  height: 100%;
+  width: 100%;
+}
+
+.img-wrap {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.img-wrap a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  padding: 50% 0;
+  border-radius: 50%;
+  opacity: 0;
+  background-color: rgba(255, 0, 0, 0.75);
+  transition: 0.3s all ease;
+}
+
+.img-wrap:hover a {
+  opacity: 1;
+}
+
+iframe {
+
 }
