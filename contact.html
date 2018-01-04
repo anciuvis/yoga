@@ -16,74 +16,97 @@
         <li><a title="Contact us" href="contact.html"><i class="fa fa-envelope-o" aria-hidden="true"></i>Contact Us</a></li>
       </ul>
     </nav>
-    <main class="reserve">
-      <p>Sessions</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Reserve</th>
-            <th></th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2018 01 04</td>
-            <td>15:30</td>
-            <td>reserve</td>
-          </tr>
-          <tr>
-            <td>2018 01 04</td>
-            <td>15:45</td>
-            <td>reserve</td>
-          </tr>
-          <tr>
-            <td>2018 01 04</td>
-            <td>16:00</td>
-            <td>reserve</td>
-          </tr>
-          <tr>
-            <td>2018 01 04</td>
-            <td>16:30</td>
-            <td>reserve</td>
-          </tr>
-        </tbody>
-        <table>
-          <thead>
-            <tr>
-              <th>Reserve</th>
-              <th></th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>2018 01 05</td>
-              <td>11:30</td>
-              <td>reserve</td>
-            </tr>
-            <tr>
-              <td>2018 01 05</td>
-              <td>12:45</td>
-              <td>reserve</td>
-            </tr>
-            <tr>
-              <td>2018 01 05</td>
-              <td>16:10</td>
-              <td>reserve</td>
-            </tr>
-            <tr>
-              <td>2018 01 05</td>
-              <td>19:30</td>
-              <td>reserve</td>
-            </tr>
-          </tbody>
-        </table>
-      </table>
-      <p>Sessions</p>
-      <form action="http://google.lt/send_form.php" method="POST">
-
-      </form>
+    <main>
+      <div class="container">
+        <p class="form-text">Sessions</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Reserve this time (in Paris)</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2018 01 04</td>
+                <td>15:30</td>
+                <td><a href="#">Reserve this time</a></td>
+              </tr>
+              <tr>
+                <td>2018 01 04</td>
+                <td>15:45</td>
+                <td><a href="#">Reserve this time</a></td>
+              </tr>
+              <tr>
+                <td>2018 01 04</td>
+                <td>16:00</td>
+                <td><a href="#">Reserve this time</a></td>
+              </tr>
+              <tr>
+                <td>2018 01 04</td>
+                <td>16:30</td>
+                <td><a href="#">Reserve this time</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <thead>
+              <tr>
+                <th>Reserve this time (in Marseille)</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2018 01 05</td>
+                <td>11:30</td>
+                <td><a href="#">Reserve this time</a></td>
+              </tr>
+              <tr>
+                <td>2018 01 05</td>
+                <td>12:45</td>
+                <td><a href="#">Reserve this time</a></td>
+              </tr>
+              <tr>
+                <td>2018 01 05</td>
+                <td>16:10</td>
+                <td><a href="#">Reserve this time</a></td>
+              </tr>
+              <tr>
+                <td>2018 01 05</td>
+                <td>19:30</td>
+                <td><a href="#">Reserve this time</a></td>
+              </tr>
+            </tbody>
+          </table>
+        <p class="form-text">To validate your booking please fill in the form:</p>
+        <form action="http://google.lt/send_form.php" method="POST">
+          <div class="container">
+            <input class="form-names" type="text" name="name" placeholder="Your Name" />
+            <input class="form-names" type="text" name="surname" placeholder="Your Surname" />
+            <input class="form-email" type="text" name="email" placeholder="Your E-mail address" />
+          </div>
+          <p class="form-text">Why did you choose to come?</p>
+          <input type="checkbox" id="relax" name="reason" checked /><label for="relax">I need to relax</label>
+          <input type="checkbox" id="doctor" name="reason" /><label for="doctor">My doctor sent me</label>
+          <input type="checkbox" id="friends" name="reason" /><label for="friends">I want to try it with my friends</label>
+          <p class="form-text">Do you want to get a newsletter?</p>
+          <input type="radio" id="news-y" name="newsletter" checked /><label for="news-y">Yes</label>
+          <input type="radio" id="news-n" name="newsletter" /><label for="news-n">No</label>
+            <p class="form-text">How did you know about us?</p>
+            <select class="container" name="know-source">
+              <option selected>Friend told me</option>
+              <option>From my medicine doctor</option>
+              <option>Saw ad on the Internet</option>
+            </select>
+          <div class="container">
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </main>
     <footer class="container">2018 3WA training: Yoga</footer>
   </body>
 </html>
